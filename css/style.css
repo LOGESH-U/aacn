@@ -1,0 +1,435 @@
+@import "/variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--content);
+  background: #d3e4f8;
+  box-sizing: border-box;
+}
+#MainTopHeader {
+  z-index: 11;
+  height: 50px;
+  background-color: var(--main);
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+}
+#headerRight {
+  display: flex;
+  align-items: center;
+}
+#headerLeft {
+  display: flex;
+  align-items: center;
+}
+#socialMedia ul {
+  display: flex;
+  align-items: center;
+}
+#MainTopHeader a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+}
+#MainTopHeader span {
+  margin-right: 6px;
+}
+#MainTopHeader i {
+  font-size: 1.5rem;
+}
+#socialMedia i {
+  font-size: 1.6rem;
+  margin-right: -10px;
+}
+
+#mainNav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--main);
+  background: #fff;
+}
+.nav_logo {
+  width: 70px;
+  margin-right: 10px;
+}
+
+#mainNav ul li:first-child a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main);
+  width: 320px;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.vh {
+  height: 100vh;
+  /* border-bottom: 1px solid green; */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#headerBanner {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+.bgimage {
+  height: 100%;
+  background: url(../images/face_clock.jpg) no-repeat 100% -30px;
+  background-size: contain;
+}
+
+.headerBannerMsg {
+  z-index: 99;
+  width: 600px;
+  height: 40vh;
+  position: absolute;
+  top: 12vh;
+  left: 10vw;
+  border-radius: 10px;
+  padding: 15px 0px 15px 15px;
+  background: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.headerBannerMsgBold {
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 2.6rem;
+}
+.headerBannerMsg p:nth-last-child(2) {
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #fff;
+  width: 550px;
+}
+.headerBannerBtn .btn {
+  cursor: pointer;
+  z-index: 111;
+  padding: 15px 30px;
+  border: none;
+  background: #fff;
+  color: var(--main);
+  font-weight: 700;
+  border-radius: 2px;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+.headerBannerBtn .btn:hover {
+  box-sizing: border-box;
+  color: #fff;
+  background: var(--main);
+  border: 1px solid #fff;
+}
+#aboutUs {
+  width: 90%;
+  height: 450px;
+  /* border: 1px solid green; */
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+.aboutUsMsg {
+  width: 58%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.aboutUsMsg p {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+p.aboutUsMsgBold {
+  line-height: 20px;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.aboutUsMsg .aboutUsHeading {
+  color: var(--main);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-left: -20px;
+}
+.imgAboutUs {
+  height: 400px;
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/aboutus.png);
+}
+#docterSection {
+  width: 90%;
+  margin: 0 auto;
+  height: 400px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+}
+.drImage {
+  width: 50%;
+  /* border: 3px solid rgb(0, 0, 0); */
+  /* object-fit: contain; */
+}
+.drImage img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.drDetails {
+  width: 50%;
+  /* border: 1px solid green; */
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.drName {
+  margin-bottom: 15px;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+.drMsg {
+  line-height: 30px;
+  font-size: 2rem;
+}
+#contactInfo {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contactUs {
+  /* border-radius: 30px 0px 0 30px; */
+  padding: 6rem;
+  background: #fff;
+  /* display: block; */
+  width: 70%;
+}
+.contactInfo {
+  width: 45%;
+  padding: 6rem;
+  /* border-radius: 0px 30px 30px 0px; */
+  background: var(--main);
+  color: #fff;
+}
+.contactUs p:first-child {
+  color: var(--main);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.contactUs p:nth-child(2) {
+  color: #000;
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.contactUs input {
+  background: #d3e4f8;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+.userName {
+  box-sizing: border-box;
+  width: 100%;
+}
+.inputCenter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.email,
+.phoneNumber {
+  width: 45%;
+}
+.message {
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 1rem;
+  background-color: #d3e4f8;
+  resize: none;
+}
+.contactUs button {
+  padding: 10px;
+  width: 12rem;
+  border: none;
+  color: #fff;
+  background-color: var(--main);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contactInfo p:first-child {
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.location,
+.mail,
+.phone {
+  margin-top: 30px;
+  display: flex;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.contactInfo span {
+  font-weight: 600;
+}
+
+.contactInfo i {
+  font-size: 2.6rem;
+  margin-right: 50px;
+  width: 10px;
+}
+.contactInfo a {
+  color: #fff;
+  text-decoration: none;
+}
+footer {
+  background: #000;
+  height: 50px;
+  color: #fff;
+}
+footer .footerCenter {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slMedia ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slMedia ul li a {
+  color: var(--main);
+  font-size: 2.6rem;
+}
+.slMedia {
+  width: 150px;
+}
+/* drop down */
+.dropbtn {
+  /* background-color: #4caf50;
+  color: white; */
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.dropdown {
+  z-index: 111;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  line-height: 1.7rem;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #f9f9f9;
+  min-width: 260px;
+  font-size: 1.2rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  border: 1px solid #b1b1b1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.registration .dropdown-content button {
+  color: black;
+  border: 1px solid #b1b1b1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.registration .dropdown-content button:hover {
+  background-color: var(--main);
+}
+.dropdown-content a:hover {
+  background-color: var(--main);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--main);
+}
+/* .home {
+  background-color: var(--main);
+} */
+#headerRight .adminLogin a {
+  border: 1px solid #fff;
+  padding: 0.8rem;
+  /* border-radius: 30px; */
+}
+#headerRight .adminLogin a:hover {
+  background: #fff;
+  color: var(--main);
+  font-weight: 500;
+  border: none;
+}
+#mainNav a {
+  text-decoration: none;
+  color: var(--content);
+}
+#adminLogin_js {
+  display: block;
+}
+/* #adminLOGOUT_js {
+  display: none;
+} */
+.headerBannerBtn a {
+  text-decoration: none;
+  color: var(--main);
+}
+/* #registerBtn a:hover {
+  color: #fff;
+}
+#registerBtn {
+  color: #fff;
+} */

@@ -1,0 +1,32 @@
+.bg {
+  background-color: #fff;
+}
+.whoWeAre {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.heading {
+  text-transform: uppercase;
+  padding: 1.4rem;
+  background: var(--main);
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 400px;
+  margin-bottom: 3rem;
+}
+.msg {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+.image img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 3rem;
+}

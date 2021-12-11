@@ -1,0 +1,61 @@
+.registrationForm {
+  width: 40%;
+  margin: 0 auto;
+}
+.registrationForm form {
+  display: flex;
+  margin-top: 6%;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* border: 1px solid red; */
+}
+.regForm {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.container {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.container label {
+  font-size: 2rem;
+  font-weight: 500;
+  /* border: 1px solid green; */
+  width: 200px;
+  display: block;
+}
+.container input {
+  width: 300px;
+  padding: 1rem;
+  outline: none;
+  /* border-radius: 1rem; */
+  background: none;
+  border: 2px solid var(--main);
+}
+#position {
+  width: 320px;
+  padding: 1rem;
+}
+#submit {
+  width: 215px;
+  align-self: center;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: var(--main);
+  /* border-radius: 1rem; */
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+#regAddress {
+  overflow: auto;
+}

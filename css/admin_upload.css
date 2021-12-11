@@ -1,0 +1,344 @@
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.upload {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.asideNav {
+  background: rgb(255, 255, 255);
+  width: 25%;
+  border-right: 1px solid #00000033;
+  z-index: 1111;
+  /* display: block; */
+}
+section {
+  width: 75%;
+  background: rgb(255, 255, 255);
+  /* background: rgb(185, 185, 185); */
+}
+.heading {
+  width: 100%;
+  background: var(--main);
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.collapsible {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: rgb(105, 123, 182);
+}
+
+.content {
+  /* padding: 0 18px; */
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  text-transform: capitalize;
+}
+.flex button:hover {
+  width: 100%;
+  color: #fff;
+  background: var(--main);
+}
+.up,
+.down,
+.regiView,
+.uploadNews,
+.showContactUs {
+  display: none;
+}
+.uploadHeading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -80px;
+  margin-bottom: 70px;
+}
+.pdfUpload {
+  display: none;
+}
+.imageUpload {
+  display: none;
+}
+.registrationView {
+  display: none;
+}
+.newsAndUpdate {
+  display: none;
+}
+.show-contactUs-list {
+  display: none;
+}
+
+.pdfUpload form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.uploadBtn {
+  padding: 1rem;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 2rem;
+  background: var(--main);
+}
+.uploadLabel,
+.description,
+.deportment {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.description,
+.deportment {
+  margin-top: 2rem;
+  /* width: 120px; */
+}
+
+.uploadLabel {
+  margin-left: 120px;
+}
+
+.imageUpload form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.regView {
+  /* padding: 2rem !important; */
+  background-color: #fff;
+  height: 100vh;
+  padding-bottom: 200px;
+  overflow: scroll;
+}
+thead tr th {
+  background-color: #fff;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+thead {
+  background-color: #fff !important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+tbody tr td.rowSpace {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: left;
+  font-size: 1.4rem;
+}
+tbody {
+  padding-bottom: 300px !important;
+}
+.viewrig {
+  background-color: #f1f1f1;
+}
+.one {
+  width: 5%;
+}
+.two {
+  width: 10%;
+}
+.three {
+  width: 14%;
+}
+
+.newsCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  /* border: 1px solid green; */
+}
+.newsListSection {
+  /* width: 90%; */
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: scroll;
+  height: 70vh;
+  padding-bottom: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.newsListSection .container {
+  width: 80%;
+  margin: 1rem 0rem;
+  border: 1px solid #1d1d1d4b;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.end-of-list {
+  margin-top: 7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: dotted;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(51, 51, 51);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 10px;
+}
+.headingTime {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0rem;
+}
+.headingTime h6 {
+  color: #1d1d1dc0;
+}
+.headingTime h1 {
+  text-transform: uppercase;
+}
+.hoverItems {
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  right: 0;
+  display: flex;
+  display: none;
+}
+.hoverItems button {
+  height: 100%;
+  width: 10rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.hoverItems .delete button {
+  margin: 0rem 0.7rem;
+  color: red;
+  border: 1px solid rgba(255, 0, 0, 0.527);
+}
+.hoverItems .edit button {
+  color: orange;
+  border: 1px solid rgba(255, 166, 0, 0.5);
+}
+.hoverItems .delete button:hover {
+  border: 2px solid rgb(255, 0, 0);
+}
+.hoverItems .edit button:hover {
+  border: 2px solid rgb(255, 166, 0);
+}
+.newsListSection .container:hover .hoverItems {
+  display: flex;
+}
+.newsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+.newsUpdateSection {
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.newHeading,
+.newsDescription {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* border: 1px solid green; */
+}
+.newHeading label {
+  width: 20rem;
+}
+.newsDescription label {
+  width: 20rem;
+}
+.newsDescription textarea {
+  width: 400px;
+}
+.newHeading input {
+  width: 400px;
+}
+.newsDescription {
+  margin: 1rem 0rem;
+}
+.newsForm button {
+  width: 200px;
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--main);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contact-delete-btn {
+  display: none;
+}
+.contact-delete-btn {
+  position: relative;
+  height: inherit;
+}
+.contact-delete-btn button {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  bottom: 50%;
+  width: 10rem;
+  height: 100%;
+  text-transform: uppercase;
+  background-color: var(--main);
+  border: none;
+  color: #fff;
+}
+.contact-hover-delete:hover .contact-delete-btn {
+  display: block;
+}
+.whiteBG {
+  background: #fff !important;
+}

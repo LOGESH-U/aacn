@@ -1,0 +1,26 @@
+body {
+  background-color: #fff !important;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.image img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.image img:hover {
+  transform: scale(1.5);
+}

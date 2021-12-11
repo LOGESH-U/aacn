@@ -1,0 +1,55 @@
+.fileUploadSection {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 50vh;
+  width: 60%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.fileUploadSection div {
+  margin: 15px 0px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.upload span {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+#path {
+  text-transform: capitalize;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  outline: none;
+}
+.upload input[type="submit"] {
+  width: 200px;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--main);
+}
+.msg {
+  font-weight: 400;
+  margin: 20px 0px;
+}
+.uploadHeading {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.uploadHeading p {
+  font-size: 2rem;
+  font-weight: 700;
+}

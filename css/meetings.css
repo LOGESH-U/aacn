@@ -1,0 +1,98 @@
+.meetingsBody {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.heading {
+  text-transform: uppercase;
+  padding: 1.4rem;
+  background: var(--main);
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 400px;
+  margin-bottom: 3rem;
+}
+.msg {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+.msg p {
+  margin-bottom: 2rem;
+}
+.bg {
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+.membersTable {
+  width: 80%;
+  margin: 0 auto;
+}
+td {
+  text-transform: capitalize;
+}
+th,
+td {
+  border: 1px solid rgb(0, 0, 0) !important;
+  line-height: 2.5rem;
+}
+td {
+  font-size: 1.6rem;
+}
+td:last-child {
+  display: none;
+}
+th:last-child {
+  display: none;
+}
+.agenda {
+  margin-top: 8rem;
+}
+.agenda_heading {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 2.6rem;
+  text-transform: capitalize;
+}
+.agenda_no {
+  /* height: 90px; */
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* border: 1px solid green; */
+}
+
+.agenda_msg {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.6rem;
+}
+.space {
+  margin-bottom: 2rem;
+}
+.agenda_nos {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: block;
+}
+.end {
+  margin-top: 5rem;
+}
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
